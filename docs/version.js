@@ -1,0 +1,1 @@
+var latest = {version: '1.0.0-SS', released: 'April 14th, 2011', timestamp: '1302829182'};

@@ -1,0 +1,126 @@
+* {
+  font-family: 'Trebuchet MS', Arial;
+  font-size: 10pt;
+}
+
+a:link {
+  color: #FF0000;
+}
+
+a:visited {
+  color: #AA0000;
+}
+
+a:link:hover {
+  color: #AFAFAF;
+}
+
+pre {
+  font-family: monospace;
+}
+
+ul b {
+  vertical-align: top;
+  display: inline-block;
+  width: 18%;
+  text-align: right;
+}
+
+ul span {
+  display: inline-block;
+  margin-bottom: 1em;
+  width: 70%;
+}
+
+ul img {
+  vertical-align: top;
+  margin-bottom: 1em;
+}
+
+xmp {
+  font-family: monospace;
+}
+
+#perms-table td {
+  border-bottom: 1px dotted #afafaf;
+}
+
+.main-content {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 600px;
+}
+
+.header-main {
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header-section {
+  border-bottom: 1px solid #afafaf;
+  font-weight: bold;
+  font-size: 130%;
+  margin: 2em 0 0.5em 0;
+  display: block;
+}
+
+.section {
+  margin: 1em 10px 0 30px;
+}
+
+.toc-link {
+  float: right;
+}
+
+.message-notice {
+  border: 1px solid #0b198c;
+  background-color: #f5f5ff;
+  padding: 4px;
+  color: #0b198c;
+  font-weight: bold;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.large {
+  font-size: 110%;
+}
+
+.larger {
+  font-size: 125%;
+}
+
+.largest {
+  font-size: 150%;
+}
+
+.mono {
+  font-family: monospace;
+}
+
+.code {
+  font-family: monospace;
+  background-color: #ececec;
+  border: 1px solid #B8B4AE;
+  padding: 4px;
+  margin-left: 20px;
+  overflow: auto;
+}
+
+.mt {
+  margin-top: 2em;
+}
+
+.nmb {
+  margin-bottom: 0;
+}

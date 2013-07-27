@@ -1,0 +1,302 @@
+<html>
+<head>
+    <title>TradeX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <div class="main-content">
+
+    <div class="header-main">TradeX Installation</div>
+
+    <div class="toc-link" style="margin-top: 5px;"><a href="index.html">Table of Contents</a></div>
+
+    <br />
+    <br />
+
+    <div class="message-notice">
+      If you are moving your installation to a new server or to a new domain on the same server, please follow the instructions in the
+      <a href="install-move.html">Moving Your Installation</a> portion of this manual.
+
+      <br /><br />
+
+      Unless otherwise noted, you are licensed to install the software on a single domain. If you would like to install the software
+      on more than one domain, you will need to purchase additional licenses or the unlimited domain license. Additional licenses may be
+      purchased though the <a href="http://www.jmbsoft.com/my-account/" target="_blank">My Account</a> interface at a discounted rate.
+      <a href="http://www.jmbsoft.com/contact/" target="_blank">Contact me</a> if you would like to upgrade to the unlimited domain license.
+    </div>
+
+    <br /><br />
+
+    <div class="message-notice">
+      <span style="color: #FF0000; font-size: 120%;">Help Prevent Software Piracy</span>
+
+      <br /><br />
+
+      If you have uploaded the TradeX zip (or tar.gz) file to your server, remove it now. Leaving it on
+      your server provides a chance for other users to steal it from your web space. Make sure you never leave a copy of
+      the software archive where other people can access it.
+
+      <br /><br />
+
+      Never share your software with anyone. The license you purchased is for your use only. You may not give or sell the software
+      to anyone under any circumstances. Never share your owners lounge username or password with anyone. Again, that is for your use only. I will never
+      ask for you to send your password, so if you ever get an e-mail requesting it you should not send it.
+
+      <br /><br />
+
+      If you ever find a site that is offering this software for download, please contact me immediately so I can have
+      the site shut down. Every time the software is pirated instead of purchased, it means fewer resources for me to continue
+      the development of this and future software.
+    </div>
+
+
+    <div class="header-section">Automated Installation</div>
+    <div class="section">
+      <div class="message-notice">
+        The automated installation will only work on servers where PHP is running with safe_mode disabled.  If PHP is running in safe_mode on your server,
+        use the <a href="#manual-install">Manual Installation</a> instructions below.
+      </div>
+
+      <br />
+
+      The easiest way to get TradeX installed is to use the automated installation script.  To complete the installation do the following:
+
+      <ol>
+        <li>
+          When downloading TradeX from the JMB Software My Account interface, select the Automatic Installation option.  You will then download an archive that
+          contains the auto-installer.php script.
+        </li>
+
+        <br />
+
+        <li>
+          Select a directory of your site where you would like to install TradeX.  The software should be installed in an empty sub-directory of your site and
+          not in the base directory of your site or a directory that already contains other files.  For the remainder of the installation process, it is assumed
+          that you have selected a directory named <b><i>tx</i></b> for your TradeX installation.
+        </li>
+
+        <br />
+
+        <li>
+          Upload <b><i>only</i></b> the auto-install.php file from the TradeX software distribution to the <b><i>tx</i></b> directory of your website.
+        </li>
+
+        <br />
+
+        <li>
+          Change the permissions on the <b><i>tx</i></b> directory to 777.
+        </li>
+
+        <br />
+
+        <li>
+          Access the auto-install.php file through your web browser.  If using the recommended directory name of <b><i>tx</i></b>, the URL to the auto-install.php file would be:
+          <div class="mono">http://www.yoursite.com/tx/auto-install.php</div>
+        </li>
+
+        <br />
+
+        <li>
+          The installation script will perform a few tests and display the results for you.  If all of the tests are successful, there will be a button labeled <b><i>Install TradeX</i></b>.
+          Click on that button to continue the installation process.
+        </li>
+
+        <br />
+
+        <li>
+          The installer will now grab the installer file from jmbsoft.com and create the necessary directories and extract the software files.  When it is complete, you will get a message
+          indicating that the software files have been installed on your server.
+        </li>
+
+        <br />
+
+        <li>
+          Before you can access the TradeX control panel, you <b><i>must</i></b> delete the auto-install.php file from your server.
+        </li>
+
+        <br />
+
+        <li>
+          The installation confirmation page will also provide you with a link to the TradeX control panel along with the username and password that have been setup.  The password is randomly
+          generated for each TradeX installation, so you should write it down for safe keeping.
+        </li>
+
+        <br />
+
+        <li>
+          After writing down the username and password, click the link to access the TradeX control panel.  You will then need to enter that username and password to gain access.
+        </li>
+
+        <br />
+
+        <li>
+          The first time you login, and until you save the software settings, the Global Settings dialog will appear.  All of the settings will be filled in with default values, however you
+          can change them to whatever values you would like to use.  After you have made the changes (or even if you don't make changes at all) save your settings.
+        </li>
+
+        <br />
+
+        <li>
+          Change the permissions on the <b><i>tx</i></b> directory to 755.
+        </li>
+
+      </ol>
+
+      The installation process is now complete!  Continue on to the <a href="first-steps.html">First Steps After Installation</a> for details on items you will want to complete
+      before going live with your site.
+
+    </div>
+
+
+
+
+
+    <div class="header-section">Manual Installation<a name="manual-install"></a></div>
+    <div class="section">
+
+      Manual installation of TradeX requires a bit more work, but it still pretty straightforward.  Use the following steps to complete a manual installation:
+
+      <ol>
+        <li>
+          Select a directory of your site where you would like to install TradeX.  The software should be installed in an empty sub-directory of your site and
+          not in the base directory of your site or a directory that already contains other files.  For the remainder of the installation process, it is assumed
+          that you have selected a directory named <b><i>tx</i></b> for your TradeX installation.
+        </li>
+
+        <br />
+
+        <li>
+          Upload all of the files and directories from the TradeX software distribution, with the exception of the following:
+
+          <br /><br />
+
+          <ul>
+            <li> The utilities directory and it's files</li>
+          </ul>
+        </li>
+
+        <br />
+
+        <li>
+          Set permissions on the files and directories that you uploaded.  If you are not sure how to set permissions, consult the documentation for your FTP client
+          and/or contact your server administrator for more information.  Below is a table containing the recommended permissions you will need to set on each directory or file.
+          If you do not see a file or directory listed, it means you do not need to change the permissions on that file or directory
+
+          <br /><br />
+
+          <ul>
+            <table id="perms-table" width="400" cellspacing="0" cellpadding="3" border="0" style="border: 1px solid #aaaaaa;">
+              <tr>
+                <td bgcolor="#cccccc" class="bold">File or Directory</td>
+                <td bgcolor="#cccccc" class="bold centered">Permissions</td>
+              </tr>
+              <tr bgcolor="#ececec">
+                <td>data directory</td>
+                <td align="center">777</td>
+              </tr>
+              <tr bgcolor="#ffffff">
+                <td>logs directory</td>
+                <td align="center">777</td>
+              </tr>
+              <tr bgcolor="#ececec">
+                <td>All files in data directory <sup style="font-size: 8pt;">1</sup></td>
+                <td align="center">666</td>
+              </tr>
+              <tr bgcolor="#ffffff">
+                <td>All sub-directories of the data directory <sup style="font-size: 8pt;">2</sup></td>
+                <td align="center">777</td>
+              </tr>
+              <tr bgcolor="#ececec">
+                <td>All files in templates directory</td>
+                <td align="center">666</td>
+              </tr>
+              <tr bgcolor="#ffffff">
+                <td>templates/_compiled directory</td>
+                <td align="center">777</td>
+              </tr>
+              <tr bgcolor="#ececec">
+                <td>in.php file</td>
+                <td align="center">666</td>
+              </tr>
+              <tr bgcolor="#ffffff">
+                <td>out.php file</td>
+                <td align="center">666</td>
+              </tr>
+              <tr bgcolor="#ececec">
+                <td>image.php file</td>
+                <td align="center">666</td>
+              </tr>
+              <tr bgcolor="#ffffff">
+                <td>lib/config.php file</td>
+                <td align="center">666</td>
+              </tr>
+            </table>
+          </ul>
+
+          <br />
+
+          <div class="message-notice" style="margin-bottom: 8px;">
+            <sup>1</sup> This includes all files in the data directory itself, and all files in all sub-directories and their descendant directories.
+          </div>
+
+          <div class="message-notice">
+            <sup>2</sup> This includes all sub-directories, their descendant sub-directories and so on.
+          </div>
+
+          <br />
+
+          These are only the recommended file permissions, and may need to be altered depending on your server configuration.  For example, on servers using suPHP you will want to use
+          755 permissions in place of 777 and 644 permissions in place of 666.
+        </li>
+
+        <br />
+
+        <li>
+          From the utilities directory of the TradeX software distribution upload the reset-access.php script to the cp directory of your TradeX installation.
+        </li>
+
+        <br />
+
+        <li>
+          In your web browser, bring up the reset-access.php script.  If using the recommended directory name of <b><i>tx</i></b>, the URL to the reset-access.php file would be:
+          <div class="mono">http://www.yoursite.com/tx/cp/reset-access.php</div>
+        </li>
+
+        <br />
+
+        <li>
+          The reset-access.php script will generate a username and password for the TradeX control panel.  Before you can access the control panel, delete the reset-access.php script
+          from your server.  Be sure to write down the username and password before you click on the link to access the TradeX control panel.
+        </li>
+
+        <br />
+
+        <li>
+          After writing down the username and password, click the link to access the TradeX control panel.  You will then need to enter that username and password to gain access.
+        </li>
+
+        <br />
+
+        <li>
+          The first time you login, and until you save the software settings, the Global Settings dialog will appear.  All of the settings will be filled in with default values, however you
+          can change them to whatever values you would like to use.  After you have made the changes (or even if you don't make changes at all) save your settings.
+        </li>
+
+      </ol>
+
+      The installation process is now complete!  Continue on to the <a href="first-steps.html">First Steps After Installation</a> for details on items you will want to complete
+      before going live with your site.
+
+
+      </ol>
+
+    </div>
+
+
+  </div>
+
+
+</body>
+</html>

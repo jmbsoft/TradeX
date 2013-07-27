@@ -1,0 +1,200 @@
+1.0.0-SS - 04/14/2011
+=====================
+- Fixed issue that caused thumbnails to be detached from a trade when doing a single edit (04/14/2011)
+
+
+
+1.0.0-SS - 04/12/2011
+=====================
+- Fixed issue that caused error message when building toplist that had no requirements set (04/12/2011)
+- Fixed issue that caused thumbnails to be detached from a trade when doing a bulk edit (04/12/2011)
+
+
+
+1.0.0-SS - 01/04/2011
+=====================
+- Fixed long domain names causing stats table to not display properly (01/03/2011)
+- Added ability to specify mulitple requirements for toplists (01/03/2011)
+- Added ability to give priority to trades in outlists for toplists (01/03/2011)
+- Added ability to link to out.php without any parameters (surfer will be sent to a trade) (01/03/2011)
+- Added ability to specify the URL surfers will be sent to after visiting all trades (01/04/2011)
+- Fixed broken link to documentation in Manage Toplists interface (01/04/2011)
+- Documentation for moving TradeX to a different server or account (01/04/2011)
+- Documentation for the link generator interface (01/04/2011)
+
+
+
+1.0.0-SS - 09/15/2010
+=====================
+- Fixed issue that could cause creation of invalid files in the stats directories (09/15/2010)
+
+
+
+1.0.0-SS - 09/04/2010
+=====================
+- Fixed issue that could cause empty outlists with a specific configuration (09/04/2010)
+
+
+
+1.0.0-SS - 08/23/2010
+=====================
+- Fixed issue that could cause administrator e-mails to go to end-users (06/15/2010)
+- Fixed issue that prevented old data from being cleared from log files (08/23/2010)
+
+
+
+1.0.0 - 05/20/2010
+==================
+- Added --build-toplists command line argument for cron.php script (05/20/2010)
+- When using cron to rebuild toplists, the Toplist Build Interval now accepts a value of -1 to prevent non-cron rebuilds (05/20/2010)
+
+
+
+1.0.0-BETA - 04/28/2010
+=======================
+- Added information icon to the overall and hourly stats pages; hover over to see more information about the trade (04/27/2010)
+- Added ability to grab thumbnails for trades through the control panel in the trade information box (04/27/2010)
+- Added option to configure toplists to only display trades that have thumbnails (04/27/2010)
+- Added test to check the mogrify path and availability of GD in Global Settings interface (04/27/2010)
+- Added cron.php script which can be used to automatically grab thumbnails from trades (04/28/2010)
+
+
+
+1.0.0-BETA - 04/13/2010
+=======================
+- Fixed issue with nickname not being properly imported when bulk adding trades (04/12/2010)
+- Added ability to sort toplists by domain and site name (04/13/2010)
+- Added ability to extract search engine search terms when the are embedded in the search engine URL (04/13/2010)
+
+
+
+1.0.0-BETA - 04/07/2010
+=======================
+- Fixed issue with automatic reactivation of autostopped trades not working properly (04/05/2010)
+- Automatic installer updated to increase the PHP memory_limit and to enable the PHP display_errors option (04/05/2010)
+- Added option to enable or disable the confirmation e-mail that is sent to new trades (04/07/2010)
+- Added option to send an e-mail message to the administrator when a new trade is registered (04/07/2010)
+
+
+
+1.0.0-BETA - 03/31/2010
+=======================
+- Automatic update now recompiles templates and updates script files without requiring user action (03/29/2010)
+- Added option for users to select the category of their site on the trade registration form (03/29/2010)
+- Added ability to select which trades should be synced during a Network Sync (03/30/2010)
+- Added option to automatically re-activate trades that have been autostopped (03/30/2010)
+- Added number of shown sites in the Network Stats interface (03/30/2010)
+
+
+
+1.0.0-BETA - 03/26/2010
+=======================
+- Fixed issue that caused double query string to be appended to Return URLs that already have a query string and are using the external info feature (03/25/2010)
+- Fixed AJAX error message with trades that have a sub-domain (03/25/2010)
+- Fixed issue with hourly forces not updating correctly when doing a bulk edit (03/25/2010)
+- Fixed issue with register-complete.tpl template missing the traffic URL in the <a href> tag (03/26/2010)
+
+
+
+1.0.0-BETA - 03/25/2010
+=======================
+- Fixed issue with force settings not being updated properly when bulk-editing trades (03/24/2010)
+- Fixed issue with system trades not displaying historical stats graphs correctly (03/25/2010)
+- Fixed issue with "Display in toplist" option having no affect when un-checked (03/25/2010)
+
+
+
+1.0.0-BETA - 03/22/2010
+=======================
+- Added no-image to System Trades for tracking of users that do not load the image.php script (03/22/2010)
+- Improved compatibility with LinkX (03/22/2010)
+
+
+
+1.0.0-BETA - 03/18/2010
+=======================
+- Fixed issue with skim scheme sync that caused files to be named Array instead of the correct scheme name (03/18/2010)
+
+
+
+1.0.0-BETA - 03/16/2010
+=======================
+- Updated control panel login cookie to expire when browser window is closed (03/12/2010)
+- Updated auto-installer to grab the installation file from jmbsoft.com automatically (03/15/2010)
+- Added auto-updater to the control panel interface (03/15/2010)
+- Removed requirement that allow_url_fopen PHP setting be enabled (03/15/2010)
+- Added ability to view aggregated historical stats for all trades (03/15/2010)
+- Fixed issue with bad country quality bar displaying wrong % for 24 hour stats in overall stats interface (03/15/2010)
+
+
+
+1.0.0-BETA - 03/12/2010
+=======================
+- Fixed issue that prevented traffic from being sent to a trade when the skim value was 0% (03/11/2010)
+- Fixed issue that caused historical stats to be recorded in an incorrect format (03/12/2010)
+- Added utility script history-fixer.php to repair incorrectly formated historical stats (03/12/2010)
+
+
+
+1.0.0-BETA - 03/10/2010
+=======================
+- Fixed issue that caused syntax errors with in.php when the search engines list contained an apostrophe (03/08/2010)
+- Fixed issue with background color not being respected in overall and hourly stats (03/10/2010)
+- Fixed sorting issue in overall stats when numeric values exceeded 1000 and contained a comma (03/10/2010)
+- Fixed issue with syncing skim schemes that caused an error message when trying to view, add, or edit schemes (03/10/2010)
+- in.php script has been largely re-written to better handle return visitors coming from a new referrer (03/10/2010)
+- Implemented external info feature [Thanks to kildoozer for providing details] (03/10/2010)
+- Integrated the search engine list kindly provided by user timlover [http://www.jmbsoft.com/support/viewtopic/6827/] (03/10/2010)
+
+
+
+1.0.0-BETA - 03/06/2010
+=======================
+- Added details for permissions settings in documentation for manual installation (03/06/2010)
+- Fix to prevent stats updates and toplist generation before the software settings have been saved for the first time (03/06/2010)
+
+
+
+1.0.0-BETA - 03/05/2010
+=======================
+- Sorting method in stats interfaces is now saved when the page is refreshed (03/04/2010)
+- Fixed issue when in.php was included in another PHP page that that changed the timezone affecting 60 minute in stats (03/04/2010)
+- Fixed issue with in.php that prevented a chdir() back to the original working directory for intra-site traffic or modified cookies (03/04/2010)
+- Added ability to select 755 and 644 permissions during automated installation (03/04/2010)
+- Added workaround to prevent namespace conflicts with TradeX and other products (TubeX, LinkX) when building toplists from in.php (03/04/2010)
+- Menu for trades has been split into two columns to resolve display issues on low resolution screens (03/04/2010)
+- PHP include_path is saved and restored by in.php to prevent conflicts with third party scripts (03/04/2010)
+- Added global reference to $C configuration variable for cases when in.php is loaded inside a function (03/04/2010)
+
+
+
+1.0.0-BETA - 03/04/2010
+=======================
+- Updated in.php for better compatibility with Wordress, TubeX, and LinkX (03/04/2010)
+
+
+
+1.0.0-BETA - 03/03/2010
+=======================
+- When trade import is unsuccessful, added note to check the import.log file for details (03/03/2010)
+- Added workaround for buggy PHP versions that return false from glob() when directory is empty (03/03/2010)
+- Landing pages now have query string stripped when tabulating stats (03/03/2010)
+- Control panel login screen password input box changed from text to password type (03/03/2010)
+- Permissions on in.php, out.php and image.php are now preserved when saving software settings (03/03/2010)
+- Updated some of the documentation (03/03/2010)
+
+
+
+1.0.0-BETA - 03/02/2010
+=======================
+- Fixed issue that caused encrypted password rather than actual password from displaying on the registration confirmation page (03/02/2010)
+- Some documentation files were missing from the software distribution (03/02/2010)
+- Some data files were missing from the software distribution causing error messages in the control panel (03/02/2010)
+- Fixed issue with error message displayed in network sync interface when no sites are configured (03/02/2010)
+- Fixed issue with error message displayed in network stats interface when no sites are configured  (03/02/2010)
+
+
+
+1.0.0-BETA - 03/02/2010
+=======================
+- Initial public release

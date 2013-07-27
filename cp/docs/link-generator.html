@@ -1,0 +1,122 @@
+<html>
+<head>
+    <title>TradeX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <div class="main-content">
+
+    <div class="header-main">Link Generator</div>
+
+    <div class="toc-link"><a href="index.html">Table of Contents</a></div>
+
+    <span class="header-section">Overview</span>
+    <div class="section">
+      The link generator can be used to assist you in generating the out.php links you will use on your site to skim traffic, send traffic to trades, etc.
+    </div>
+
+
+    <span class="header-section">Link Generator Settings</span>
+    <div class="section">
+
+      <ul>
+        <b>Link Type -</b>
+        <span>
+          Select the type of link to generate.
+
+          <br /><br />
+
+          <div class="bold">% to Content</div>
+          This link type will include a hard-coded skim percentage in the URL to determine when surfers are sent to trades.
+
+          <br /><br />
+
+          <div class="bold">Skim Scheme</div>
+          This link type will use the skim scheme that you select to determine when surfers are sent to trades.
+
+          <br /><br />
+
+          <div class="bold">To Specific Trade</div>
+          This link type will always send the surfer to the trade listed in the URL.
+
+          <br /><br />
+
+        </span>
+        <br />
+
+        <b>% to Content -</b>
+        <span>
+          Enter the percentage (a value from 1 - 100) of clicks on this link that will be sent to content.  The remaining percentage will be sent to trades.
+        </span>
+        <br />
+
+        <b></b>
+        <span>
+          <div class="bold">First click always to content</div>
+          Check this if you always want the first click on this type of link to go to the content URL
+        </span>
+        <br />
+
+        <b>Skim Scheme -</b>
+        <span>
+          Select the skim scheme to use for this link
+        </span>
+        <br />
+
+        <b>Trade -</b>
+        <span>
+          Select the trade this link should send to
+        </span>
+        <br />
+
+        <b>Content URL -</b>
+        <span>
+          Enter the full URL to the content this link should send to when it does <strong>NOT</strong> send to a trade
+        </span>
+        <br />
+
+        <b>URL Encoding -</b>
+        <span>
+          Select how the content URL should be encoded.
+
+          <br /><br />
+
+          <div class="bold">urlencode</div>
+          The content URL will be visible in the link, but special characters will be encoded so they can be passed through the out.php script without a problem
+
+          <br /><br />
+
+          <div class="bold">base64_encode</div>
+          The content URL will be completely encoded and not readable in the link.
+        </span>
+        <br />
+
+        <b>Limit to Category -</b>
+        <span>
+          Select a category if you want to limit this link to send only to trades in that category
+        </span>
+        <br />
+
+        <b>Limit to Group -</b>
+        <span>
+          Select a group if you want to limit this link to send only to trades in that group
+        </span>
+        <br />
+
+        <b>Link Identifier -</b>
+        <span>
+          An identifier for the generated link.  This can be used to break down stats further by what link was clicked.
+        </span>
+        <br />
+      </ul>
+
+
+    </div>
+
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<html>
+<head>
+    <title>TradeX Documentation</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+  <div class="main-content">
+
+    <div class="header-main">E-mail Templates</div>
+
+    <div class="toc-link"><a href="index.html">Table of Contents</a></div>
+
+    <span class="header-section">Template Editing Interface</span>
+    <div class="section">
+      Editing the e-mail templates is done through the Templates &gt; E-mail Templates function in the control panel.  That interface will look
+      something like this:
+
+      <br /><br />
+
+      <div class="centered">
+        <img src="images/templates-email.png" title="E-mail Templates" />
+      </div>
+
+      <ul>
+        <b>Available Templates -</b> <span>This section will list all of the available site templates that you can edit.  When you first access
+                                     the page, only this section will be shown.  Click on a template name to load that template for editing.</span><br />
+
+        <b>Message Subject -</b> <span>Enter the subject you would like to use for the e-mail message</span><br />
+
+        <b>Message Body -</b> <span>Enter the body of the e-mail message</span><br />
+
+        <b>Toolbar Functions -</b> <span>Use the toolbar functions to peform the following actions:
+
+                                   <br /><br />
+
+                                   <img src="../images/search-replace-32x32.png" />
+                                   <span>Click this icon to bring up the Search and Replace dialog where you can perform a search and replace on many templates at once.</span><br />
+
+
+                                   <img src="../images/save-32x32.png" />
+                                   <span>Click this icon to save the currently loaded template</span><br />
+
+                                   <img src="../images/reload-32x32.png" />
+                                   <span>Click this icon to reload the template code for the currently loaded template.  This is useful when you do a search and replace which
+                                   affects the current template you are editing.</span><br />
+
+                                   <img src="../images/help-32x32.png" />
+                                   <span>Click this icon to access this documentation file</span>
+                                   </span>
+      </ul>
+    </div>
+
+
+    <span class="header-section">Search and Replace</span>
+    <div class="section">
+      TradeX allows you to make quick changes to your templates in bulk with the Search and Replace function.  When you access the Search and Replace function a dialog will appear that will allow you
+      to select the templates that you want to perform this action on, the code to search for in the template, and the replacement code to use.  Multiple templates can be selected by holding down the shift or ctrl
+      keys on your keyboard as you click on templates in the selection list.  Once you have selected the templates and entered the search and replacement code, press the Apply Changes button to start the task.
+      Once completed a notification message will be displayed letting you know how many replacements were made.
+    </div>
+
+
+
+    <span class="header-section">Greeting and Signature Templates</span>
+    <div class="section">
+      There are two special e-mail templates that you can edit which only allow configuring of the Message Body and do not have a Subject.  Those are:
+
+      <ul>
+        <b style="width: 20%;">email-global-greeting.tpl -</b> <span>Use this template to control the text that is appended to the beginning of every e-mail message sent by the software.
+                                                               This is a good place to put a simple greeting.</span><br />
+
+        <b style="width: 20%;">email-global-signature.tpl -</b> <span>Use this template to control the text that is appended to the end of every e-mail message sent by the software.  This is
+                                                                a good place to put your signature, a privacy notice, a link to your site, etc.</span><br />
+      </ul>
+
+    </div>
+
+
+
+    <span class="header-section">Templates &amp; Their Variables</span>
+    <div class="section">
+      All of the e-mail templates will have the following variables set:
+
+      <br /><br />
+
+      <b class="large">$g_config</b><br />
+      The software configuration settings
+
+      <div style="margin-left: 30px; margin-top: 10px;">
+        <b>$g_config.site_name -</b> <span>Site Name</span><br />
+        <b>$g_config.traffic_url -</b> <span>Traffic URL</span><br />
+        <b>$g_config.base_url -</b> <span>TradeX URL</span><br />
+        <b>$g_config.cookie_domain -</b> <span>Cookie Domain</span><br />
+        <b>$g_config.cookie_path -</b> <span>Cookie Path</span><br />
+        <b>$g_config.email_address -</b> <span>E-mail Address</span><br />
+        <b>$g_config.email_name -</b> <span>E-mail Name</span><br />
+        <b>$g_config.date_format -</b> <span>Date Format</span><br />
+        <b>$g_config.time_format -</b> <span>Time Format</span><br />
+        <b>$g_config.flag_accept_new_trades -</b> <span>Accepting new trades</span><br />
+        <b>$g_config.flag_captcha_register -</b> <span>Use CAPTCHA on registration form</span><br />
+        <b>$g_config.flag_allow_login -</b> <span>Allow users to login with a password to view their stats</span><br />
+        <b>$g_config.site_name_min -</b> <span>Site name minimum length</span><br />
+        <b>$g_config.site_name_max -</b> <span>Site name maximum length</span><br />
+        <b>$g_config.site_description_min -</b> <span>Site description minimum length</span><br />
+        <b>$g_config.site_description_max -</b> <span>Site description maximum length</span><br />
+        <b>$g_config.flag_req_email -</b> <span>E-mail address required</span><br />
+        <b>$g_config.flag_req_site_name -</b> <span>Site name required</span><br />
+        <b>$g_config.flag_req_site_description -</b> <span>Site description required</span><br />
+        <b>$g_config.flag_req_icq -</b> <span>ICQ required</span><br />
+        <b>$g_config.flag_req_nickname -</b> <span>Name/Nickname required</span><br />
+        <b>$g_config.flag_req_banner -</b> <span>Banner URL required</span><br />
+      </div>
+
+      <br />
+
+      <b class="large">$g_trade</b><br />
+      The trade account data
+
+      <div style="margin-left: 30px; margin-top: 10px;">
+        <b>$g_trade.domain -</b> <span>Domain name</span><br />
+        <b>$g_trade.return_url -</b> <span>Traffic URL</span><br />
+        <b>$g_trade.status -</b> <span>Account status</span><br />
+        <b>$g_trade.email -</b> <span>E-mail address</span><br />
+        <b>$g_trade.nickname -</b> <span>Name/Nickname</span><br />
+        <b>$g_trade.icq -</b> <span>ICQ number</span><br />
+        <b>$g_trade.site_name -</b> <span>Site name</span><br />
+        <b>$g_trade.site_description -</b> <span>Site description</span><br />
+      </div>
+
+      <br />
+
+      Below you will find a list of all the e-mail templates shipped with the software, a description of when the template is used, and details on the template variables
+      available (if any) on that template.
+
+      <br /><br />
+
+      <div class="bold large">email-forgot-confirm.tpl</div>
+      <ul>
+        This e-mail message will be sent to a trade account owner when they are requesting a lost password.  In addition to the standard values in the $g_trade variable
+        there is also one additional value:
+
+        <br /><br />
+
+        <b>$g_trade.confirm_id - </b> <span>The confirmation ID that must be included in the URL to receive a new password</span>
+      </ul>
+
+
+      <div class="bold large">email-register-complete.tpl</div>
+      <ul>
+        This e-mail message will be sent to a trade account owner when they successfully complete the registraion process.
+      </ul>
+
+
+      <div class="bold large">email-register-confirm.tpl</div>
+      <ul>
+        This e-mail message will be sent to a trade account owner after the complete the registration process if you are requiring new accounts to be confirmed by e-mail.
+        In addition to the standard values in the $g_trade variable there is also one additional value:
+
+        <br /><br />
+
+        <b>$g_trade.confirm_id - </b> <span>The confirmation ID that must be included in the URL to complete the registration process</span>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>
