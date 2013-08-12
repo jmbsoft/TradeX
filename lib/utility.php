@@ -13,6 +13,10 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+// To fix this error: Warning: date(): It is not safe to rely on the system's timezone settings.
+// Uncomment the line below and enter your desired time zone. See: http://php.net/manual/en/timezones.php for a list of zones
+//date_default_timezone_set('America/Chicago');
+
 define('LIC_DOMAIN', 'Any');
 define('LIC_USERNAME', '');
 define('LIC_KEY', '');
