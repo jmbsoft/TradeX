@@ -31,9 +31,9 @@ error_reporting(E_ALL & ~E_NOTICE & ~E_STRICT);
 // Version information
 
 
-define('VERSION', '1.0.0-SS');
-define('RELEASED', 'April 14th, 2011');
-define('TIMESTAMP', '1302829182');
+define('VERSION', '1.0.1');
+define('RELEASED', 'August 11, 2013');
+define('TIMESTAMP', '1376269662');
 
 
 
